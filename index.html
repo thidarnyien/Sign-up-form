@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <main class="d-flex mb-4">
+    <section class="text-white">
+    
+      <h1 class="fw-bold">Learn to code by watching others</h1>
+  
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable. </p>
+    </section>
+  
+   <section> 
+    <div class="title mb-3 text-center py-2 rounded-3 text-white">Try it free 7 days then $20/mo. thereafter</div>
+    <form class="bg-white p-4 p-lg-5 rounded-3">
+      <div class="mb-3">
+        <input type="text" class="form-control" name="name" placeholder="First Name">
+        <i class="text-end" id="firstErr">First name cannot be empty</i>
+      </div>
+      <div class="mb-3">
+        <input type="text" id="name" class="form-control" name="name" placeholder="Last Name ">
+        <i class="text-end" id="lastErr">Last name cannot be empty</i>
+      </div>
+      <div class="mb-3">
+          <input type="email" id="email" class="form-control" name="email" placeholder="Email Address">
+         <i class="text-end" id="emailEmpty">Looks like this is not an empty</i>
+         <i class="text-end" id="emailErr">Your email is not format or correct!</i>
+      </div>
+      <div class="mb-3">
+        <input type="password" id="password" class="form-control" name="password" placeholder="Password">
+        <i class="text-end" id="pwEmpty">Password cannot be empty</i>
+        <i class="text-end" id="pwErr">Incorrect password!</i>
+      </div>
+      <a class="btn btn-success w-100 mb-1" type="submit"> Claim your free trial</a>
+      <p class="text-center info">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+    </form>
+    </section>
+  
+  </main>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.frontendmentor.io/profile/thidarnyien">Thidar Nyein</a>.
+    </p>
+  </footer>
+
+  <script src="./js/app.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
